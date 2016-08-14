@@ -1,0 +1,20 @@
+version: '2'
+services:
+  db:
+    build: ./postgres-1c/
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=postgres      
+  pgstudio:
+    image: lukasmartinelli/pgstudio
+    ports:
+      - "2000:8080"        
+  pgadmin:
+    image: fenglc/pgadmin4
+    ports:
+      - "3000:5050"      
+  powa-web:
+    build: ./powa-web
+    ports:
+      - "4000:8888"
