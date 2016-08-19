@@ -5,7 +5,8 @@ services:
     ports:
       - "5432:5432"
     environment:
-      - POSTGRES_PASSWORD=postgres      
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_INITDB_ARGS=--locale=ru_RU.UTF-8 --lc-messages=en_US.UTF-8            
   pgstudio:
     image: lukasmartinelli/pgstudio
     ports:
