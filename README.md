@@ -9,15 +9,16 @@
     * [pgAdmin4 (beta)](https://www.pgadmin.org/)
 * Средства анализа
     * [POWA](http://dalibo.github.io/powa/)
+    * [pgBadger](https://github.com/dalibo/pgbadger)
 
 ## Развертывание
 
-* Установить [Vagrant](https://www.vagrantup.com/)
-* Установить плагин *vagrant-docker-compose*
-    ```
-    vagrant plugin install vagrant-docker-compose
-    ```
-* Запускаем
-    ```
-    vagrant up
-    ```
+1. Установить [Vagrant](https://www.vagrantup.com/)
+2. Установить плагин *vagrant-docker-compose*   
+   
+        vagrant plugin install vagrant-docker-compose
+   
+3. Запускаем
+
+        vagrant up
+

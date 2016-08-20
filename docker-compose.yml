@@ -10,15 +10,15 @@ services:
   pgstudio:
     image: lukasmartinelli/pgstudio
     ports:
-      - "2000:8080"        
+      - "8081:8080"        
   pgadmin:
     image: fenglc/pgadmin4
     ports:
-      - "3000:5050"      
+      - "8082:5050"      
   powa-web:
     build: ./powa-web
     ports:
-      - "4000:8888"
+      - "8083:8888"
   pgbadger:
     build: ./pgbadger    
     volumes_from: 
@@ -26,4 +26,12 @@ services:
     depends_on:
       - db
     ports:
-      - "5000:80"
+      - "8084:80"
+  index:
+    image: busybox
+    volumes:
+      - ./www:/www
+    ports:
+      - "8080:80"
+    command: httpd -f -v -h /www
+  
