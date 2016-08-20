@@ -6,7 +6,7 @@ services:
       - "5432:5432"
     environment:
       - POSTGRES_PASSWORD=postgres
-      - POSTGRES_INITDB_ARGS=--locale=ru_RU.UTF-8 --lc-messages=en_US.UTF-8            
+      - POSTGRES_INITDB_ARGS=--locale=ru_RU.UTF-8 --lc-messages=C            
   pgstudio:
     image: lukasmartinelli/pgstudio
     ports:
@@ -19,3 +19,11 @@ services:
     build: ./powa-web
     ports:
       - "4000:8888"
+  pgbadger:
+    build: ./pgbadger    
+    volumes_from: 
+      - db:ro
+    depends_on:
+      - db
+    ports:
+      - "5000:80"
