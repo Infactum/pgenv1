@@ -13,8 +13,8 @@
 
 ## Развертывание
 
-1. Установить [Vagrant](https://www.vagrantup.com/)
-2. Установить плагин *vagrant-docker-compose*   
+1. Устанавливаем [Vagrant](https://www.vagrantup.com/)
+2. Устанавливаем плагин *vagrant-docker-compose*   
    
         vagrant plugin install vagrant-docker-compose
    
@@ -22,3 +22,4 @@
 
         vagrant up
 
+4. Открываем [стартовую страницу](http://localhost:8080)
