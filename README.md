@@ -6,7 +6,7 @@
 * PostgreSQL с патчами фирмы 1С (сборка от [Postgres Professionals](https://postgrespro.ru/products/1c_build))
 * Средства администрирования:
     * [PostgreSQL Studio](http://www.postgresqlstudio.org/)
-    * [pgAdmin4 (beta)](https://www.pgadmin.org/)
+    * [pgAdmin4](https://www.pgadmin.org/)
 * Средства анализа
     * [POWA](http://dalibo.github.io/powa/)
     * [pgBadger](https://github.com/dalibo/pgbadger)
